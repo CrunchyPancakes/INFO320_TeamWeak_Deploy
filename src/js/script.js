@@ -46,7 +46,7 @@ function getData() {
 
   fetch(url).then(function (response) {
     response.json().then(function (data) {
-      scooterData = data.data.bikes;
+      scooterData = data.bikes;
       displayMarkers();
     });
   });
