@@ -40,13 +40,12 @@ L.tileLayer(
 let scooterData = [];
 
 function getData() {
-  // let url =
-  //   "http://api.flamingoscooters.com/gbfs/wellington/free_bike_status.json";
-  let url = "data.json";
+  let url =
+    "http://api.flamingoscooters.com/gbfs/wellington/free_bike_status.json";
 
   fetch(url).then(function (response) {
     response.json().then(function (data) {
-      scooterData = data.bikes;
+      scooterData = data.data.bikes;
       displayMarkers();
     });
   });
