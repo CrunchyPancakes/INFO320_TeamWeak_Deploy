@@ -40,8 +40,9 @@ L.tileLayer(
 let scooterData = [];
 
 function getData() {
-  let url =
-    "http://api.flamingoscooters.com/gbfs/wellington/free_bike_status.json";
+  // let url =
+  //   "http://api.flamingoscooters.com/gbfs/wellington/free_bike_status.json";
+  let url = "data.json";
 
   fetch(url).then(function (response) {
     response.json().then(function (data) {
