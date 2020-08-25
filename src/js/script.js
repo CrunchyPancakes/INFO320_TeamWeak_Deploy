@@ -41,7 +41,7 @@ let scooterData = [];
 
 function getData() {
   let url =
-    "http://api.flamingoscooters.com/gbfs/wellington/free_bike_status.json";
+    "//http://api.flamingoscooters.com/gbfs/wellington/free_bike_status.json";
 
   fetch(url).then(function (response) {
     response.json().then(function (data) {
