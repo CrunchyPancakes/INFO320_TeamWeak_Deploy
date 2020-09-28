@@ -22,54 +22,51 @@
     <link rel="stylesheet" href="LeafletCluster/MarkerCluster.Default.css" />
     <script src="LeafletCluster/leaflet.markercluster.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+
     <title>Flamingo Scooter Finder</title>
   </head>
 
   <body>
     <div class="info" id="output">
-      <h3><span>Settings</span></h3>
+      <h3 class="scooterInfoTitle"><span>Settings</span></h3>
 
       <table>
         <tr>
           <th>ID:</th>
           <td id="scooterID"></td>
         </tr>
+        <!-- <tr>
+                <th>Range:</th>
+                <td id="scooterRange"></td>
+            </tr> -->
         <tr>
-          <th>Range:</th>
-          <td id="scooterRange"></td>
+          <th>Battery:</th>
+          <td id="scooterBattery"></td>
         </tr>
         <tr>
-          <th>GPS Status:</th>
-          <td>Available</td>
+          <th>Status:</th>
+          <td id="scooterStatus"></td>
         </tr>
         <tr>
-          <th>GPS Updated:</th>
-          <td>3:15pm 16/8/20</td>
+          <th>Model:</th>
+          <td id="scooterModel"></td>
         </tr>
         <tr>
-          <th>GPS Precsion:</th>
-          <td>Perfect</td>
+          <th>Distance:</th>
+          <td id="scooterDistance"></td>
         </tr>
       </table>
 
-      <div class="buttons">
+      <!-- <div class="buttons">
         <div class="rows">
-          <div class="btn">
-            Location
-          </div>
-          <div class="btn">
-            Navigation
-          </div>
+          <div class="btn">Location</div>
+          <div class="btn">Navigation</div>
         </div>
         <div class="rows">
-          <div class="btn">
-            Open Hatch
-          </div>
-          <div class="btn">
-            Mark Completed
-          </div>
+          <div class="btn">Open Hatch</div>
+          <div class="btn">Mark Completed</div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <script src="js/script.js"></script>

@@ -27,29 +27,17 @@
       <form name="login">
         <label for="email">Email</label>
         <input type="text" id="email" name="email" />
-        <br />
         <label for="pswd">Password</label>
         <input type="password" id="pswd" name="password" />
-        <span class="psw"><a href="#">Forgot password?</a></span>
-        <input type="button" onclick="validate(this.form)" value="Login" />
+        <input
+          type="button"
+          onclick="validate(this.form)"
+          value="Login"
+          id="loginButton"
+        />
       </form>
-
-      <!-- Checkbox for 'remember me' -->
-      <div class="check">
-        <input type="checkbox" checked="checked" name="rembrMe" />
-        <label for="rembrMe">Remember me?</label>
-      </div>
     </div>
 
-    <!-- Javascript for valdating user -->
-    <script>
-      function validate(form) {
-        if (form.email.value == "test" && form.password.value == "123") {
-          window.location.href = "main.html";
-        } else {
-          alert("Email or Password is invalid");
-        }
-      }
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
