@@ -196,7 +196,7 @@ font-family: 'Roboto', sans-serif;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90vw;
 }
 
 table {
